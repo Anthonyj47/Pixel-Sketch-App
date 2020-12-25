@@ -5,11 +5,6 @@ container.classList.add("container")
 let body = document.getElementById("body");
 body.appendChild(container)
 
-let grid_sct = document.createElement('p');
-grid_sct.classList.add("grid-sct")
-grid_sct.innerHTML = "Circle Grid";
-body.appendChild(grid_sct)
-
 //Generating cell grid
 for(let i = 0; i < (16*16); i++){
     let cell = document.createElement('div');
@@ -24,20 +19,11 @@ for(let i = 0; i < (16*16); i++){
             cell.style.backgroundColor = "#333";
         }
     });    
-    grid_sct.addEventListener('click', (e)=> {
-        if (grid_sct.innerHTML == "Circle Grid") {
-            grid_sct.innerHTML == "Block Grid";
-        } else {
-            grid_sct.innerHTML == "Circle Grid";
-        }
-    });
     container.appendChild(cell);
 }
 
-//Color grids
-for(let i = 0; i < (16*16); i++){
 
-}
+
 
 
 
