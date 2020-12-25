@@ -1,9 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Black.ttf);
+}
 
 body{
     position: relative;
+    background-image: linear-gradient(65deg, #fff 0%, #ddd 100%);
 }
 
-.container{
+header {
+    height: 75px; width: 100%;
+    background-image: linear-gradient(to right, #feda75 20%,#fa7e1e 40%, #d62976 60%, #962fbf 80%, #4f5bd5 100%);
+    border-bottom: 3px solid;
+}
+
+header h1 {
+    font-family: roboto;
+    color: #333;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.reset {
+    position: absolute;
+    left: 45%;
+    font-family: roboto;
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.grid-sct {
+    display: block;
+    position: relative;
+    top: 67px;
+    left: 447px;
+    font-family: roboto;
+    color: #333;
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+    background-image: linear-gradient(to right, #962fbf 0%, #b54bdf 100%) ;
+    border: 3px solid #61187e;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 3px 3px #61187e;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.grid-sct:active:hover {
+    top: 70px;
+    left: 450px;
+    box-shadow: none;
+}
+
+.container{ 
     position: absolute;
     left: 50%;
     height: 50%;
@@ -22,6 +81,8 @@ body{
     height: 20px;
     width: 20px;
     background-color: #fff;
+    cursor: pointer;
+    /* border-radius: 100px; */
 }
 
 .cell:hover {
