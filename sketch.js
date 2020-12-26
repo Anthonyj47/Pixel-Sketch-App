@@ -7,7 +7,9 @@ body.appendChild(container)
 
 
 //Nav Buttons
-let grid_sct = document.querySelector(".grid-sct");
+let clr_sctor = document.querySelector(".clr-sct");
+let clr_sct = document.querySelector("#my-color");
+
 //Generating cell grid
 for(let i = 0; i < (16*16); i++){
     let cell = document.createElement('div');
@@ -20,10 +22,11 @@ for(let i = 0; i < (16*16); i++){
             cell.style.backgroundColor = "#fff";
         }
         else{
-            cell.style.backgroundColor = "#333";
+            cell.style.backgroundColor = clr_sct.value;
         }
     });    
 }
+
 
 
 for (let index = 0; index < 1000; index++) {
